@@ -17,8 +17,12 @@ void mystery1(auto& Data)// also known as bubble sort dtat
   for ( int i = 0 ; i < Data.size( ) ; i++)
   {
     for ( int j = 0 ; j < i ; j++)
+    {
 	if ( Data[ i ] < Data[ j ] )
+	 {
 	    swap( Data[ i ] , Data[ j ] );
+	}
+}
 
     print(Data);
   }//end outer for (this brace is needed to include the print statement)
@@ -32,7 +36,7 @@ void mystery2(auto& Data)// also given as insertion sort
 		
 		while(j>0 and Data[j] < Data[j-1])
 		{
-			swap(Data[j], Data[j-1];
+			swap(Data[j], Data[j-1]);
 			j--;
 		}
 	}
@@ -52,7 +56,7 @@ void mystery3(auto& Data)
 			}
 		}
 		
-		swap(Data[i], Data[min])
+		swap(Data[i], Data[min]);
 	}
 }
 //... Other mysteries...
@@ -69,5 +73,7 @@ int main()
   mystery1(D1);
   mystery2(D2);
   mystery3(D3);
+  
+  
 
 }
